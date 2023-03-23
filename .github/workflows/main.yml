@@ -14,7 +14,7 @@ jobs:
       - name: Copy .env
         run: php -r "file_exists('.env') || copy('.env.example', '.env');"
       - name: Install Dependencies
-        run: 
+        run: |
           cd /home/runner/work/Team-18-Project-Laravel/Bambi-Laravel
           composer update --ignore-platform-reqs
       - name: Generate key
